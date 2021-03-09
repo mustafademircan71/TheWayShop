@@ -1,0 +1,122 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model List<Message>
+
+<div class="col-md-12">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Mesajlar
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <a href="/send-messages-list" class="btn btn-warning">Gönderilen Mesajlar</a>
+                    <br /><br />
+                    <table id="tblMessageList" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Mesajı Gönderen</th>
+                                <th>E-Mail Adresi</th>
+                                <th>Konu</th>
+                                <th>Mesaj</th>
+                                <th></th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var message in Model)
+                            {
+                                if (message.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>@message.FullName</td>
+                                        <td>@message.Mail</td>
+                                        <td>@message.Subject</td>
+                                        <td>@message.Messages</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning btnSend" messageid="@message.Id">Yanıtla</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnDelete" messageid="@message.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="divNewMessageForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Mesaj</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmNewCategory">
+                        <input id="hfMessageId" type="hidden" />
+                        <input id="txtFullName" type="hidden" />
+                        <input id="txtEmail" type="hidden" />
+                        <input id="txtSubject" type="hidden" />
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Mesaj</label>
+                                <textarea id="txtMessage" class="form-control"></textarea>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button id="btnSend" type="button" class="btn btn-primary">Gönder</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/lib/summernote/summernote-bs4.min.js"></script>
+    <script src="~/AdminPanel/js/MessageList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/summernote/summernote-bs4.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}
+

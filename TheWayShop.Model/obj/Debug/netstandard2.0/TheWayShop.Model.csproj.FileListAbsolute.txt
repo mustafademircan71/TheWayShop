@@ -1,0 +1,139 @@
+D:\engin\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+D:\engin\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+D:\engin\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+D:\engin\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+D:\engin\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+D:\engin\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+D:\20201128\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+D:\20201128\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+D:\20201128\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+D:\20201128\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+D:\20201128\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+D:\20201128\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\20201129\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\TheWayShop.Model.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.csproj.CopyComplete
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop.Model\obj\Debug\netstandard2.0\TheWayShop.Model.pdb

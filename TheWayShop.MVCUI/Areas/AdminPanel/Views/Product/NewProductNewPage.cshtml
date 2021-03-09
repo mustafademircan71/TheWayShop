@@ -1,0 +1,88 @@
+﻿
+@{
+    ViewData["Title"] = "NewProductNewPage";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model ProductListVm
+    <div class="col-md-12">
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-edit"></i>
+                     Ürün Kayıt Sayfası 
+                </h3>
+            </div>
+            <form id="frmNewProduct" class="row col-12">
+                <div class="col-md-4">
+                    <label class="form-label">Ürün Adı</label>
+                    <input type="text" class="form-control" id="txtProductName" name="txtProductName" placeholder="Ürün Adı" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Fiyat</label>
+                    <input type="text" class="form-control" id="txtPrice" name="txtPrice" placeholder="Fiyat" />
+                </div>
+                <br /> <br />
+                <div class="col-md-4">
+                    <label class="form-label">İndirim Oranı</label>
+                    <input type="text" class="form-control" id="txtDiscount" name="txtDiscount" placeholder="İndirim Oranı" />
+                </div>
+                <div class="col-md-4">
+                    <label class="form-label">Stok Miktarı</label>
+                    <input type="text" class="form-control" id="txtStock" name="txtStock" placeholder="Stok Miktarı" />
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState">Kategorisi</label>
+                    <select id="ddlCategoryList" name="ddlCategoryList" class="form-control" asp-items="Model.CategoryList">
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="inputState">Marka</label>
+                    <select id="ddlBradnList" name="ddlBradnList" class="form-control" asp-items="Model.BrandList">
+                    </select>
+                </div>
+                <div class=" col-md-4">
+                    <label>Fotoğraflar</label>
+                    <input id="fuPhoto" name="fuPhoto" type="file" class="form-control" multiple />
+                </div>
+
+
+                <div class="col-md-12">
+                    <label>Kısa Açıklama</label>
+                    <textarea id="txtShortDescription" class="form-control"></textarea>
+                </div>
+                <div class=" col-md-12">
+                    <label>Açıklama</label>
+                    <textarea id="txtDescription" class="form-control"></textarea>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheckActive" name="gridCheckActive" checked>
+                    <label class="form-check-label" for="gridCheckActive">
+                        Aktif
+                    </label>
+                </div>
+                <br /><br />
+                <div class="col-3">
+                    <button id="btnSave" type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+            @section scripts{
+                <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+                <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+                <script src="~/lib/summernote/summernote-bs4.min.js"></script>
+                <script src="~/AdminPanel/js/NewProduct.js"></script>
+
+            }
+
+            @section styles{
+                <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+                <link rel="stylesheet" href="~/lib/summernote/summernote-bs4.css">
+                <style>
+                    .error {
+                        color: red;
+                    }
+                </style>
+            }

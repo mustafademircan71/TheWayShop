@@ -1,0 +1,190 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+@model List<Slider>
+
+<div class="col-md-12">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Kayıtlı Slider Listesi
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#divNewSliderForm">Yeni Slider Ekle</button>
+                    <br /><br />
+                    <table id="tblAdminList" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Fotoğraf</th>
+                                <th>Başlık</th>
+                                <th>Açıklama</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var slider in Model)
+                            {
+                                if (slider.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@slider.SliderImage" style="width:75px;" />
+                                        </td>
+                                        <td>@slider.Header</td>
+                                        <td>@slider.Description</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning btnEdit" sliderid="@slider.Id">Düzenle</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnDelete" sliderid="@slider.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="divNewSliderForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yeni Slider Kayıt Formu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frmNewSlider">
+                   
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Başlık</label>
+                            <input type="text" class="form-control" id="txtHeader" name="txtHeader" placeholder="Başlık">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Açıklama</label>
+                            <textarea id="txtDescription" name="txtDescription" class="form-control" placeholder="Açıklama"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputAddress">Link</label>
+                        <input type="text" class="form-control" id="txtLink" name="txtLink" placeholder="Link">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Fotoğraf</label>
+                            <input id="fuPhoto" name="fuPhoto" type="file" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck" checked>
+                            <label class="form-check-label" for="gridCheck">
+                                Aktif
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button id="btnSave" type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@* Güncelleme *@
+<div class="modal fade" id="divUpdateSliderForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Yeni Slider Kayıt Formu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frmUpdateSlider" >
+                    <input id="hfSliderIdUpdate" type="hidden" />
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Başlık</label>
+                            <input type="text" class="form-control" id="txtHeaderUpdate" name="txtHeaderUpdate" placeholder="Başlık">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Açıklama</label>
+                            <textarea id="txtDescriptionUpdate" name="txtDescriptionUpdate" class="form-control" placeholder="Açıklama"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputAddress">Link</label>
+                        <input type="text" class="form-control" id="txtLinkUpdate" name="txtLinkUpdate" placeholder="Link">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label>Fotoğraf</label>
+                            <img id="imgSliderPhotoUpdate" style="width:50px;" />
+                            @*<button id="btnPhotoChange" type="button">Foto Değiştir</button>*@
+                            <input id="fuPhotoUpdate" name="fuPhotoUpdate" type="file" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheckUpdate" name="gridCheckUpdate" checked>
+                            <label class="form-check-label" for="gridCheckUpdate">
+                                Aktif
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button id="btnSaveUpdate" type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+
+    <script src="~/AdminPanel/js/SliderList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}

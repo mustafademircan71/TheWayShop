@@ -1,0 +1,164 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model ProductListVm
+
+<div class="col-md-12">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Kayıtlı Ürün Listesi
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#divNewProductForm">Yeni Ürün Ekle</button>
+                    <a href="/new-product-newPage" class="btn btn-warning">Yeni Ürün Ekle(Yeni Sayfa)</a>
+                    <br /><br />
+                    <table id="tblAdminList" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Fotoğraf</th>
+                                <th>Ürün Adı</th>
+                                <th>Marka</th>
+                                <th>Kategori</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var product in Model.Products)
+                            {
+                                if (product.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@product.ProductPhotos" style="width:75px;" />
+                                        </td>
+                                        <td>@product.ProductName</td>
+                                        <td>@product.Brand.BrandName</td>
+                                        <td>@product.Category.CategoryName</td>
+                                        <td>
+                                            <a href="/product-update-page-@product.Id" class="btn btn-warning" productid="@product.Id">Düzenle</a>
+
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnDelete" productid="@product.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="divNewProductForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Ürün Kayıt Formu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmNewCategory">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Ürün Adı</label>
+                                <input type="text" class="form-control" id="txtProductName" name="txtProductName" placeholder="Ürün Adı">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Fiyat</label>
+                                <input type="text" class="form-control" id="txtPrice" name="txtPrice" placeholder="Fiyat">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>İndirim Oranı</label>
+                                <input type="text" class="form-control" id="txtDiscount" name="txtDiscount" placeholder="İndirim">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Stok Adet</label>
+                                <input type="text" class="form-control" id="txtStock" name="txtStock" placeholder="Stok">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Kısa Açıklama</label>
+                                <textarea id="txtShortDescription" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label>Açıklama</label>
+                                <textarea id="txtDescription" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputState">Kategorisi</label>
+                                <select id="ddlCategoryList" name="ddlCategoryList" class="form-control" asp-items="Model.CategoryList">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputState">Markası</label>
+                                <select id="ddlBrandList" name="ddlBrandList" class="form-control" asp-items="Model.BrandList">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Fotoğraflar</label>
+                                <input id="fuPhoto" name="fuPhoto" type="file" class="form-control" multiple />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button id="btnSave" type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/lib/summernote/summernote-bs4.min.js"></script>
+    <script src="~/AdminPanel/js/ProductList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/summernote/summernote-bs4.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}
+
+
+

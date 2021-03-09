@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "SendMessageList";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model List<SendMessage>
+<div class="col-md-12">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Mesajlar
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <br /><br />
+                    <table id="tblAdminList" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Mesajı Gönderilen Kişi</th>
+                                <th>E-Mail Adresi</th>
+                                <th>Konu</th>
+                                <th>Mesaj</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var message in Model)
+                            {
+                                if (message.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>@message.FullName</td>
+                                        <td>@message.Email</td>
+                                        <td>@message.Subject</td>
+                                        <td>@message.Messages</td>
+
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnSendDelete" messageid="@message.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/AdminPanel/js/MessageList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+   
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}
+
+

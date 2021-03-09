@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "ProductDeatilsAndUpdate";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model ProductDetailsVm
+
+<form id="frmUpdateProduct" class="row col-12 form-row">
+    <input id="hfProductIdUpdate" type="hidden" value="@Model.Id"  />
+    <div class="form-group col-md-4 " >
+        <label class="form-label">Ürün Adı</label>
+        <input type="text" class="form-control" id="txtProductNameUpdate" name="txtProductNameUpdate" placeholder="Ürün Adı" value="@Model.ProductName"  />
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Fiyat</label>
+        <input type="text" class="form-control" id="txtPriceUpdate" name="txtPriceUpdate" placeholder="Fiyat" value="@Model.Price"/>
+    </div>
+    <br /> <br />
+    <div class="col-md-4">
+        <label class="form-label">İndirim Oranı</label>
+        <input type="text" class="form-control" id="txtDiscountUpdate" name="txtDiscountUpdate" placeholder="İndirim Oranı" value="@Model.Discount"   />
+    </div>
+    <div class="col-md-4">
+        <label class="form-label">Stok Miktarı</label>
+        <input type="text" class="form-control" id="txtStockUpdate" name="txtStockUpdate" placeholder="Stok Miktarı" value="@Model.Stock"  >
+    </div>
+    <div class="col-md-4">
+        <label for="inputState">Kategorisi</label>
+        <select id="ddlCategoryListUpdate" name="ddlCategoryListUpdate" class="form-control"asp-items="@Model.Cateogries" >
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="inputState">Marka</label>
+        <select id="ddlBradnListUpdate" name="ddlBradnListUpdate" class="form-control" asp-items="@Model.Brands"  >
+        </select>
+    </div>
+    <div class=" col-md-4">
+        <label>Fotoğraflar</label>
+        <input id="fuPhotoUpdate" name="fuPhotoUpdate" type="file" class="form-control" multiple />
+    </div>
+    <div class="col-md-12">
+        <label>Kısa Açıklama</label>
+        <textarea id="txtShortDescriptionUpdate" class="form-control" >@Model.ShortDescription</textarea>
+    </div>
+    <div class=" col-md-12">
+        <label>Açıklama</label>
+        <textarea id="txtDescriptionUpdate" class="form-control">@Model.Description</textarea>
+    </div>
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheckActiveUpdate" name="gridCheckActiveUpdate" checked value="@Model.IsActive" >
+            <label class="form-check-label" for="gridCheckActive">
+                Aktif
+            </label>
+        </div>
+    </div>
+    <br /><br />
+    <div class="col-3">
+        <button id="btnSaveUpdate" type="button" class="btn btn-primary">Kaydet</button>
+    </div>
+
+</form>
+
+@section scripts{
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/lib/summernote/summernote-bs4.min.js"></script>
+    <script src="~/AdminPanel/js/NewProduct.js"></script>
+
+}
+
+@section styles{
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/summernote/summernote-bs4.css">
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}

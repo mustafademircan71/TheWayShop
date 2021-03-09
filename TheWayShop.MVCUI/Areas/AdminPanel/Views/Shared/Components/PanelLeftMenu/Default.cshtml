@@ -1,0 +1,113 @@
+﻿@using TheWayShop.Model.Entity
+@model Admin
+
+<a href="index3.html" class="brand-link">
+    <img src="~/AdminPanel/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+         style="opacity: .8">
+    <span class="brand-text font-weight-light">TWS</span>
+</a>
+
+<div class="sidebar">
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+            <img src="~/AdminPanel/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+            <a href="#" class="d-block">@Model.FullName</a>
+        </div>
+    </div>
+
+    <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item has-treeview menu-open">
+                <a href="#" class="nav-link active">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    <p>
+                        Yönetici Menü
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    @*@if (Model.Role.RoleName == "SuperAdmin")*@
+                    @*@if (Model.RoleId == 1)*@
+                    @if (Model.RoleId == (int)AdminRoles.SuperAdmin)
+                    {
+                        <li class="nav-item">
+                            <a href="/admin-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Yöneticiler</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/message-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Mesajlar</p>
+                            </a>
+                        </li>
+                        <li>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/admin-panel-user-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kullanıcılar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Inactive Page</p>
+                            </a>
+                        </li>
+                    }
+                    @if (Model.RoleId == (int)AdminRoles.SuperAdmin || Model.RoleId == (int)AdminRoles.SubAdmin)
+                    {
+                        <li class="nav-item">
+                            <a href="/slider-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Slider</p>
+                            </a>
+                        </li>
+
+                    }
+                    @*@if (Model.Role.RoleName == "SuperAdmin" || Model.Role.RoleName == "CategoryAdmin")*@
+                    @*@if (Model.RoleId == 1 || Model.RoleId == 3)*@
+                    @if (Model.RoleId == (int)AdminRoles.SuperAdmin || Model.RoleId == (int)AdminRoles.CategoryAdmin)
+                    {
+                        <li class="nav-item">
+                            <a href="/category-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Kategoriler</p>
+                            </a>
+                        </li>
+                    }
+
+                    @*@if (Model.Role.RoleName == "SuperAdmin" || Model.Role.RoleName == "ProductAdmin")*@
+                    @*@if (Model.RoleId == 1 || Model.RoleId == 4)*@
+                    @if (Model.RoleId == (int)AdminRoles.SuperAdmin || Model.RoleId == (int)AdminRoles.ProductAdmin)
+                    {
+                        <li class="nav-item">
+                            <a href="/product-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Ürünler</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/brand-list" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Marka</p>
+                            </a>
+                        </li>
+                    }
+
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="/logout" class="nav-link">
+                    <i class="nav-icon fas fa-th"></i>
+                    <p>Çıkış</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

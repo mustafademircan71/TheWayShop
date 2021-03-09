@@ -1,0 +1,103 @@
+D:\engin\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\engin\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+D:\engin\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+D:\engin\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\20201128\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+D:\20201128\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+D:\20201128\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+D:\20201128\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\20201129\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201205\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\TheWayShop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\USER\Desktop\YAZILIM126\20201206\MustafaDemircan\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Downloads\TheWayShop En Son\TheWayShop (1)\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.deps.json
+C:\Users\mustafa\Desktop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\Core\bin\Debug\netstandard2.0\Core.pdb
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csprojAssemblyReference.cache
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfoInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.AssemblyInfo.cs
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.dll
+C:\Users\mustafa\Desktop\TheWayShop\Core\obj\Debug\netstandard2.0\Core.pdb

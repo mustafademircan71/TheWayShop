@@ -1,0 +1,112 @@
+﻿@model HeaderViewComponentVm
+@{ 
+    List<Category> mainCategories = Model.Categories.Where(x => x.TopCategoryId == null).ToList();
+}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+    <div class="container">
+        
+        <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="/"><img src="~/images/logo.png" class="logo" alt=""></a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="dropdown megamenu-fw">
+                    <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">Product</a>
+                    <ul class="dropdown-menu megamenu-content" role="menu">
+                        <li>
+                            <div class="row">
+                                @{ 
+                                    int mainCategoryCount = mainCategories.Count;
+                                    int colCount = mainCategoryCount <= 4 ? 3 : 2;
+                                }
+                                @foreach (var mainCategory in mainCategories)
+                                {
+                                    <div class="col-menu col-md-@colCount">
+                                        <h6 class="title">@mainCategory.CategoryName</h6>
+                                        <div class="content">
+                                            <ul class="menu-col">
+                                                @foreach (var subCategory in mainCategory.SubCategories)
+                                                {
+                                                    <li><a href="/shop/@subCategory.Id">@subCategory.CategoryName</a></li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                            <!-- end row -->
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle arrow" data-toggle="dropdown">SHOP</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Checkout</a></li>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                        <li><a href="shop-detail.html">Shop Detail</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="service.html">Our Service</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+        <!-- Start Atribute Navigation -->
+        <div class="attr-nav">
+            <ul>
+                <li class="search"><a href="#"><i class="fa fa-search"></i></a></li>
+                <li class="side-menu">
+                    <a href="#">
+                        <i class="fa fa-shopping-bag"></i>
+                        <span class="badge">@(Model.UserCart != null ? Model.UserCart.Count : 0)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- End Atribute Navigation -->
+    </div>
+    <!-- Start Side Menu -->
+    <div class="side">
+        <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+        <li class="cart-box">
+            <ul class="cart-list">
+
+                @if (Model.UserCart != null && Model.UserCart.Count > 0)
+                {
+                    foreach (var cartItem in Model.UserCart)
+                    {
+                        <li>
+                            <a href="#" class="photo"><img src="images/img-pro-01.jpg" class="cart-thumb" alt="" /></a>
+                            <h6><a href="#">@cartItem.Product.ProductName</a></h6>
+                            <p>@(cartItem.Quantity + "x - ")<span class="price">$80.00</span></p>
+                        </li>
+                    }
+
+                    <li class="total">
+                        <a href="/user-cart" class="btn btn-default hvr-hover btn-cart">Sepete Git</a>
+                        <span class="float-right"><strong>Toplam</strong>: $180.00</span>
+                    </li>
+                }
+                else
+                {
+                    <li>
+                        <p>Sepetinizde ürün bulunmamaktadır</p>
+                    </li>
+                }
+
+
+            </ul>
+        </li>
+    </div>
+    <!-- End Side Menu -->
+</nav>
+<!-- End Navigation -->

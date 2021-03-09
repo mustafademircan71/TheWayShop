@@ -1,0 +1,211 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model CategoryListVm
+
+<div class="col-md-12">
+    <div class="card card-primary card-outline">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-edit"></i>
+                Kayıtlı Kategori Listesi
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#divNewCategoryForm">Yeni Kategori Ekle</button>
+                    <br /><br />
+                    <table id="tblAdminList" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Fotoğraf</th>
+                                <th>Kategori Adı</th>
+                                <th>Öncelik</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var category in Model.Categories)
+                            {
+                                if (category.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>
+                                            <img src="@category.CategoryPhoto" style="width:75px;" />
+                                        </td>
+                                        <td>@category.CategoryName</td>
+                                        <td>@category.Priority</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning btnEdit" categoryid="@category.Id">Düzenle</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnDelete" categoryid="@category.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="divNewCategoryForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Yeni Kategori Kayıt Formu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmNewCategory">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Kategori Adı</label>
+                                <input type="text" class="form-control" id="txtCategoryName" name="txtCategoryName" placeholder="Kategori Adı">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputEmail4">Sıra No</label>
+                                <input type="text" class="form-control" id="txtPriority" name="txtPriority" placeholder="Sıra No">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputState">Üst Kategorisi</label>
+                                <select id="ddlCategoryList" name="ddlCategoryList" class="form-control" asp-items="Model.CategoryList">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Fotoğraf</label>
+                                <input id="fuPhoto" name="fuPhoto" type="file" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck" checked>
+                                <label class="form-check-label" for="gridCheck">
+                                    Ana Sayfada Gösterilsin
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheckActive" name="gridCheckActive" checked>
+                                <label class="form-check-label" for="gridCheckActive">
+                                    Aktif
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button id="btnSave" type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="divUpdateCategoryForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Kategori Düzenleme Formu</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmUpdateCategory">
+                        @*@Html.AntiForgeryToken()*@
+                        <input id="hfCategoryIdUpdate" type="hidden" />
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Kategori Adı</label>
+                                <input type="email" class="form-control" id="txtCategoryNameUpdate" name="txtCategoryUpdate" placeholder="Kateogori Adı">
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputPassword4">Sıra No</label>
+                                <input type="text" class="form-control" id="txtPriorityUpdate" name="txtPriorityUpdate" placeholder="Şifre">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="inputState">Üst Kategorisi</label>
+                                <select id="ddlCategoryListUpdate" name="ddlCategoryListUpdate" class="form-control" asp-items="Model.CategoryList">
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label>Fotoğraf</label>
+                                <img id="imgCategoryPhotoUpdate" style="width:50px;" />
+                                @*<button id="btnPhotoChange" type="button">Foto Değiştir</button>*@
+                                <input id="fuPhotoUpdate" name="fuPhotoUpdate" type="file" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheckUpdate" name="gridCheckUpdate" checked>
+                                <label class="form-check-label">
+                                    Ana Sayfada Gösterilsin
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheckActiveUpdate" name="gridCheckActiveUpdate" checked>
+                                <label class="form-check-label">
+                                    Aktif
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                    <button id="btnSaveUpdate" type="button" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/AdminPanel/js/CategoryList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}
+

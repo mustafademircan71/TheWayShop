@@ -1,0 +1,199 @@
+﻿
+@{
+    ViewData["Title"] = "List";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_Layout.cshtml";
+}
+
+@model AdminListVm
+
+    <div class="col-md-12">
+        <div class="card card-primary card-outline">
+            <div class="card-header">
+                <h3 class="card-title">
+                    <i class="fas fa-edit"></i>
+                    Kayıtlı Yönetici Listesi
+                </h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#divNewAdminForm">Yeni Yönetici Ekle</button>
+                        <br /><br />
+                        <table id="tblAdminList" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Fotoğraf</th>
+                                    <th>Ad Soyad</th>
+                                    <th>Email</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var admin in Model.Admins)
+                                {
+                                    if (admin.IsActive != false)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <img src="@admin.Photo" style="width:75px;" />
+                                            </td>
+                                            <td>@admin.FullName</td>
+                                            <td>@admin.Email</td>
+                                            <td>
+                                                <button type="button" class="btn btn-warning btnEdit" adminid="@admin.Id">Düzenle</button>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-danger btnDelete" adminid="@admin.Id">Sil</button>
+                                            </td>
+                                        </tr>
+                                    }
+
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="divNewAdminForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Yeni Yönetici Kayıt Formu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="frmNewAdmin">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="txtEmail" name="txtEmail" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputPassword4">Şifre</label>
+                                    <input type="password" class="form-control" id="txtPassword" name="txtPassword" placeholder="Şifre">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputAddress">Ad Soyad</label>
+                                <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Ad Soyad">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputState">Rolü</label>
+                                    <select id="ddlRoleList" name="ddlRoleList" class="form-control" asp-items="Model.Roles">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label>Fotoğraf</label>
+                                    <input id="fuPhoto" name="fuPhoto" type="file" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck" name="gridCheck" checked>
+                                    <label class="form-check-label" for="gridCheck">
+                                        Aktif
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                        <button id="btnSave" type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="divUpdateAdminForm" data-backdrop="static" data-keyboard="false" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Yönetici Düzenleme Formu</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="frmUpdateAdmin">
+                            @*@Html.AntiForgeryToken()*@
+                            <input id="hfAdminIdUpdate" type="hidden" />
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" id="txtEmailUpdate" name="txtEmailUpdate" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="inputPassword4">Şifre</label>
+                                    <input type="text" class="form-control" id="txtPasswordUpdate" name="txtPasswordUpdate" placeholder="Şifre">
+                                </div>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <label for="inputAddress">Ad Soyad</label>
+                                <input type="text" class="form-control" id="txtFullNameUpdate" name="txtFullNameUpdate" placeholder="Ad Soyad">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputState">Rolü</label>
+                                    <select id="ddlRoleListUpdate" name="ddlRoleListUpdate" class="form-control" asp-items="Model.Roles">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label>Fotoğraf</label>
+                                    <img id="imgAdminPhotoUpdate" style="width:50px;" />
+                                    @*<button id="btnPhotoChange" type="button">Foto Değiştir</button>*@
+                                    <input id="fuPhotoUpdate" name="fuPhotoUpdate" type="file" class="form-control"  />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheckUpdate" name="gridCheckUpdate" checked>
+                                    <label class="form-check-label">
+                                        Aktif
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                        <button id="btnSaveUpdate" type="button" class="btn btn-primary">Kaydet</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+@section scripts{
+    <script src="~/lib/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/lib/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/lib/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+    <script src="~/lib/jquery-validation/jquery.validate.js"></script>
+    <script src="~/AdminPanel/js/AdminList.js"></script>
+
+}
+
+@section styles{
+    <link rel="stylesheet" href="~/lib/datatables-bs4/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/lib/datatables-responsive/css/responsive.bootstrap4.min.css">
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+}

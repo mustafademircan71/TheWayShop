@@ -1,0 +1,107 @@
+﻿
+@{
+    ViewData["Title"] = "MyProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    User activeUser = Context.Session.GetObject<User>("ActiveUser");
+}
+
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Profilim</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active"><a href="contact-us"> Contact Us</a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-main table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Adı Soyadı</th>
+                                <th>E-Mail Adresi</th>
+                                <th>Şehir</th>
+                                <th>Ülke</th>
+                                <th>Adres</th>
+                                <th>Telefon</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBodyCartItems">
+                            <tr>
+                                <td>@activeUser.FullName</td>
+                                <td>@activeUser.Email</td>
+                                <td>@activeUser.City</td>
+                                <td>@activeUser.Country</td>
+                                <td>@activeUser.Adress</td>
+                                <td>@activeUser.Phone</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <form id="frmNewProduct" class="row col-12">
+            <input id="hfUSerIdUpdate" type="hidden" value="@activeUser.Id" />
+            <div class="col-md-4">
+                <label class="form-label">Adı Soyadı</label>
+                <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Adı Soyadı" value="@activeUser.FullName" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">E-Mail</label>
+                <input type="text" class="form-control" id="txtEmail" name="txtEmail" placeholder="E-Mail" value="@activeUser.Email" />
+            </div>
+            <br /> <br />
+            <div class="col-md-4">
+                <label class="form-label">Şehir</label>
+                <input type="text" class="form-control" id="txtCity" name="txtCity" placeholder="Şehir" value="@activeUser.City" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Ülke</label>
+                <input type="text" class="form-control" id="txtCountry" name="txtCountry" placeholder="Ülke" value="@activeUser.Country" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Telefon</label>
+                <input type="text" class="form-control" id="txtPhone" name="txtPhone" placeholder="Telefon" value="@activeUser.Phone" />
+            </div>
+            <div class="col-md-12">
+                <label>Adres</label>
+                <textarea id="txtAdres" class="form-control ">@activeUser.Adress</textarea>
+            </div>
+
+
+
+
+        </form>
+        <br />
+        <div class="col-3">
+            <button id="btnSaveUpdate" type="button" class="btn btn-primary">Bilgleri Güncelle</button>
+        </div>
+        <br />
+        <div class="col-3">
+            <button id="btnDeleteUser" type="button" class="btn btn-danger" userid="@activeUser.Id">Hesabı Kapat</button>
+        </div>
+
+
+    </div>
+</div>
+@section scripts{
+
+
+    <script src="~/js/UserProfile.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+
+}
+@section styles{
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+}
+
+

@@ -1,0 +1,131 @@
+﻿
+@{
+    ViewData["Title"] = "UserCreditCartList";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    User activeUser = Context.Session.GetObject<User>("ActiveUser");
+}
+@model List<CreditCart>
+
+<div class="cart-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="table-main table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Kartın Üstündeki Ad Soyad</th>
+                                <th>Kart No</th>
+                                <th>Son Kullanma Tairih</th>
+                                <th>Cvv</th>
+                                <th>Düzenle</th>
+                                <th>TSil</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tBodyCartItems">
+                            @foreach (var creditCart in Model)
+                            {
+                                if (creditCart.IsActive != false)
+                                {
+                                    <tr>
+                                        <td>@creditCart.CartName</td>
+                                        <td>@creditCart.CartNo</td>
+                                        <td>@creditCart.ExpirationDate</td>
+                                        <td>@creditCart.Cvv</td>
+                                        <td>
+                                            <button type="button" class="btn btn-warning btnEdit" creditcartid="@creditCart.Id">Düzenle</button>
+                                        </td>
+                                        <td>
+                                            <button type="button" class="btn btn-danger btnDelete" creditcartid="@creditCart.Id">Sil</button>
+                                        </td>
+                                    </tr>
+                                }
+
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <form id="frmNewProduct" class="row col-12">
+            <div class="col-md-4">
+                <label class="form-label">Kart Üzerindeki Ad Soyad</label>
+                <input type="text" class="form-control" id="txtFullName" name="txtFullName" placeholder="Ad Soyad" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Kart No</label>
+                <input type="text" class="form-control" id="txtCartNo" name="txtCartNo" placeholder="Cart No" />
+            </div>
+            <br /> <br />
+            <div class="col-md-4">
+                <label class="form-label">Son Kullanma Tarihi</label>
+                <input type="text" class="form-control" id="txtExpirationDate" name="txtExpirationDate" placeholder="Skt" />
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Cvv</label>
+                <input type="text" class="form-control" id="txtCvv" name="txtCvv" placeholder="Cvv" />
+            </div>
+
+
+
+
+        </form>
+        <br />
+        <div class="col-3">
+            <button id="btnSave" type="button" class="btn btn-primary">Kart Ekle</button>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="divUpdateCreditCart" data-backdrop="static" data-keyboard="false" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Kullanıcı Kayıt Formu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="frmNewUser">
+                    <div class="form-row">
+                        <input id="hfCreditCartUpdate" type="hidden"  />
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Kartın Üzerindeki Ad Soyad </label>
+                            <input type="text" class="form-control" id="txtCartNameUpdate" name="txtCartNameUpdate" placeholder="Ad Soyad">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Kart No</label>
+                            <input type="text" class="form-control" id="txtCartNoUpdate" name="txtCartNoUpdate" placeholder="Kart No">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Son Kullanma Tarihi</label>
+                            <input type="text" class="form-control" id="txtExpirationDateUpdate" name="txtExpirationDateUpdate" placeholder="Skt">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="inputEmail4">Cvv</label>
+                            <input type="text" class="form-control" id="txtCvvUpdate" name="txtCvvUpdate" placeholder="Cvv">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Kapat</button>
+                <button id="btnSaveUpdateCreditCart" type="button" class="btn btn-primary">Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+@section scripts{
+    <script src="~/js/UserProfile.js"></script>
+    <script src="~/lib/sweetalert2/dist/sweetalert2.js"></script>
+}
+@section styles{
+    <link href="~/lib/sweetalert2/dist/sweetalert2.css" rel="stylesheet" />
+}

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheWayShop.DataAccess\TheWayShop.DataAccess.csproj" />
+    <ProjectReference Include="..\TheWayShop.Model\TheWayShop.Model.csproj" />
+  </ItemGroup>
+
+</Project>

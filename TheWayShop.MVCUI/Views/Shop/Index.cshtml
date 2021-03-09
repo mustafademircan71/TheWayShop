@@ -1,0 +1,153 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model ShopIndexVm
+
+
+
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Shop</h2>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Shop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="shop-box-inner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-sm-12 col-xs-12 sidebar-shop-left">
+                <div class="product-categori">
+                    <div class="search-product">
+                        <input id="txtSearchByProductName" class="form-control" placeholder="Search here..." type="text">
+                        <button type="submit"> <i class="fa fa-search"></i> </button>
+                    </div>
+                    <div id="divSearchByProductNameList">
+                        <partial name="_SearchByProductNameList" model="@Model.SearchByProductNameList" />
+                    </div>
+
+
+                    <div class="filter-sidebar-left">
+                        <div class="title-left">
+                            <h3>Kategoriler</h3>
+                        </div>
+
+                        <div class="list-group list-group-collapse list-group-sm list-group-tree" id="list-group-men" data-children=".sub-men">
+                            @foreach (var category in Model.Categories)
+                            {
+                                if (category.SubCategories != null && category.SubCategories.Count > 0)
+                                {
+                                    <div class="list-group-collapse sub-men">
+                                        <a class="list-group-item list-group-item-action" href='@("#sub-men"+category.Id)' data-toggle="collapse">
+                                            @category.CategoryName <small class="text-muted">(@category.SubCategories.Sum(sCat => sCat.Products.Count))</small>
+                                        </a>
+                                        <div class="collapse @(category.Id == Model.ActiveCategoryTopCategoryId ? "show":"")" id='@("sub-men"+category.Id)' data-parent="#list-group-men">
+                                            <div class="list-group">
+                                                @foreach (var subCategory in category.SubCategories)
+                                                {
+                                                    <a href="/shop/@subCategory.Id" class="list-group-item list-group-item-action @(subCategory.Id == Model.ActiveCategoryId ? "active":"")">
+                                                        @subCategory.CategoryName <small class="text-muted">(@subCategory.Products.Count)</small>
+                                                    </a>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <a href="/shop/@category.Id" class="list-group-item list-group-item-action @(category.Id == Model.ActiveCategoryId ? "active":"")"> @category.CategoryName  <small class="text-muted">(@category.SubCategories.Sum(sCat => sCat.Products.Count)) </small></a>
+                                }
+                            }
+                        </div>
+
+                    </div>
+                    <div class="filter-price-left">
+                        <div class="title-left">
+                            <h3>Fiyat Aralığına Göre Ara</h3>
+                        </div>
+                        <div class="price-box-slider">
+                            <div id="slider-range"></div>
+
+                            <p>
+                                <input id="hfActiveCategoryId" type="hidden" value="@Model.ActiveCategoryId" />
+                                <input type="text" id="amount" readonly style="border:0; color:#fbb714; font-weight:bold;">
+
+                                <button id="btnSearchByPrice" class="btn hvr-hover" type="button">ARA</button>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="filter-brand-left">
+                        <div class="title-left">
+                            <h3>Markalar</h3>
+                        </div>
+                        <div class="brand-box">
+                            <ul>
+                                @foreach (var brand in Model.Brands)
+                                {
+                                    <li>
+                                        <div class="radio radio-danger">
+                                            <input name="brand" id='@("rdbBrand"+brand.Id)' value="" type="radio">
+                                            <label> @brand.BrandName </label>
+                                        </div>
+                                    </li>
+                                }
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-sm-12 col-xs-12 shop-content-right">
+                <div class="right-product-box">
+                    <div class="product-item-filter row">
+                        <div class="col-12 col-sm-8 text-center text-sm-left">
+                            <div class="toolbar-sorter-right">
+                                <span>Sort by </span>
+                                <select id="basic" class="selectpicker show-tick form-control" data-placeholder="$ USD">
+                                    <option data-display="Select">Nothing</option>
+                                    <option value="1">Popularity</option>
+                                    <option value="2">High Price → High Price</option>
+                                    <option value="3">Low Price → High Price</option>
+                                    <option value="4">Best Selling</option>
+                                </select>
+                            </div>
+                            <p>Showing all 4 results</p>
+                        </div>
+                        <div class="col-12 col-sm-4 text-center text-sm-right">
+                            <ul class="nav nav-tabs ml-auto">
+                                <li>
+                                    <a class="nav-link active" href="#grid-view" data-toggle="tab"> <i class="fa fa-th"></i> </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="#list-view" data-toggle="tab"> <i class="fa fa-list-ul"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row product-categorie-box">
+                        <div id="divProductList" class="tab-content">
+                            <partial name="_ShopIndexProducts" model="Model.ProductsOfCategory" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/js/ShopIndex.js"></script>
+}
